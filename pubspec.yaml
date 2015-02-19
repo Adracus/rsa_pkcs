@@ -5,7 +5,9 @@ description: RSA,PKCS#1,PKCS#8
 homepage: https://github.com/amaurel/rsa_pkcs
 dependencies:
   asn1lib:
-    git: git://github.com/Adracus/asn1lib.git
+    git:
+      url: git://github.com/Adracus/asn1lib.git
+      ref: 795eeee72b180ff106c8f6f9d48b458b049fc11f
   cipher: ">=0.7.1 <0.8.0"
 dev_dependencies:
   crypto: ">=0.9.0 <0.10.0"
