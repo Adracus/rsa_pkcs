@@ -4,8 +4,9 @@ author: Alexandre Maurel <alexandre.maurel@gmail.com>
 description: RSA,PKCS#1,PKCS#8
 homepage: https://github.com/amaurel/rsa_pkcs
 dependencies:
-  asn1lib: any
-  cipher: any
+  asn1lib:
+    git: git://github.com/Adracus/asn1lib.git
+  cipher: ">=0.7.1 <0.8.0"
 dev_dependencies:
-  crypto: any 
-  unittest: any
+  crypto: ">=0.9.0 <0.10.0"
+  unittest: ">=0.11.5+3 <0.12.0"

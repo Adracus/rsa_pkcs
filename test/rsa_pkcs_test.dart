@@ -11,7 +11,7 @@ main() {
   test("rsa private key PKCS#1", () {
     //openssl genrsa -out rsa_private_key.pem
     //
-    File rsa_private_key_file = new File("./resource/rsa_private_key.pem");
+    File rsa_private_key_file = new File("test/resource/rsa_private_key.pem");
     String pem = rsa_private_key_file.readAsStringSync();
     RSAPKCSParser parser = new RSAPKCSParser();
     RSAKeyPair pair = parser.parsePEM(pem);
@@ -34,7 +34,7 @@ main() {
   test("rsa public key PKCS#8", () {
     //openssl genrsa -out rsa_private_key.pem
     //openssl rsa -in rsa_private_key.pem -pubout -out rsa_public_key.pem
-    File rsa_private_key_file = new File("./resource/rsa_public_key.pem");
+    File rsa_private_key_file = new File("test/resource/rsa_public_key.pem");
     String pem = rsa_private_key_file.readAsStringSync();
     RSAPKCSParser parser = new RSAPKCSParser();
     RSAKeyPair pair = parser.parsePEM(pem);
